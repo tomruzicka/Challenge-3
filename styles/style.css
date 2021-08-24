@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.gradient1 {
+  background: linear-gradient(135deg, white, #fff5f5);
+}
+
+.gradient2 {
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+}
+
+body {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.content .content__left {
+  background-image: url(/images\bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+}
+
+.content .content__left-text {
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.content .content__left-img {
+  padding: 5rem 0 9rem 0;
+}
+
+.content .content__left-img-mobile {
+  display: none;
+}
+
+.content .content__left-heading {
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  line-height: 1.1;
+  color: #413a3a;
+}
+
+.content .content__left-span {
+  font-weight: 300;
+  color: #ce9797;
+}
+
+.content .content__left-paragraphs {
+  color: #ce9797;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.85;
+  padding: 2rem 0 3rem 0;
+}
+
+.content .content__right {
+  background-image: url(/images/hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40%;
+}
+
+.content__left-form {
+  position: relative;
+}
+
+.form-input {
+  border: 1px solid #ce9797;
+  padding: 1.7rem 2.5rem;
+  border-radius: 3rem;
+  width: 100%;
+  height: 4.5rem;
+  outline: none;
+  margin-bottom: 0.8rem;
+}
+
+.form-input[type="text"] {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.form-input::-webkit-input-placeholder {
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #ce9797;
+}
+
+.form-input:-ms-input-placeholder {
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #ce9797;
+}
+
+.form-input::-ms-input-placeholder {
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #ce9797;
+}
+
+.form-input::placeholder {
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #ce9797;
+}
+
+.form-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 7rem;
+  height: 4.5rem;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5rem;
+  border: none;
+  -webkit-box-shadow: 0px 6px 15px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 6px 15px 2px rgba(0, 0, 0, 0.2);
+}
+
+.form-btn:hover {
+  -webkit-filter: brightness(130%);
+          filter: brightness(130%);
+}
+
+.form-arrow-icon {
+  width: 0.95rem;
+}
+
+.form-error-icon {
+  position: absolute;
+  top: 1.4rem;
+  right: 8rem;
+  width: 1.7rem;
+  display: none;
+}
+
+.form-span {
+  color: #f96262;
+  display: none;
+  padding-left: 2.5rem;
+  font-weight: 400;
+}
+
+.error {
+  border: 2px solid #f96262;
+}
+
+.success {
+  border: 2px solid #106d10;
+}
+
+@media (max-width: 900px) {
+  .content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .content .content__left {
+    width: 100% !important;
+  }
+  .content .content__left-img {
+    padding: 2rem 0 2rem 2rem;
+  }
+  .content .content__left-img-mobile {
+    display: block !important;
+    width: 100%;
+  }
+  .content .content__left-text {
+    max-width: 25rem;
+  }
+  .content .content__left-heading {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+  }
+  .content .content__left-paragraphs {
+    font-size: 0.9rem;
+    text-align: center;
+    letter-spacing: 0.8px;
+    line-height: 1.7;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .content .content__right {
+    display: none;
+  }
+  .content .content__left-form {
+    margin: 0 1rem 0 1rem;
+  }
+  .content .form-input {
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    height: 4rem;
+    outline: none;
+  }
+  .content .form-input[type="text"] {
+    font-size: 1rem;
+  }
+  .content .form-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5rem;
+    height: 4rem;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5rem;
+    border: none;
+    -webkit-box-shadow: 0px 6px 15px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 6px 15px 2px rgba(0, 0, 0, 0.2);
+  }
+  .content .form-span {
+    padding-left: 2rem;
+    font-weight: 400;
+  }
+  .content .form-error-icon {
+    top: 1.3rem;
+    right: 5.3rem;
+    width: 1.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
